@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admini.arithmeticcalculator.MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input 1"
+        android:inputType="number"
+        android:id="@+id/input1"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input 1"
+        android:id="@+id/input2"
+        android:inputType="number"
+        android:layout_below="@+id/input1"
+        android:paddingTop="10dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:layout_below="@+id/input2"
+        android:id="@+id/plusBtn"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/minusBtn"
+        android:layout_toRightOf="@id/plusBtn"
+        android:layout_below="@id/input2"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x"
+        android:id="@+id/multiplyBtn"
+        android:layout_toRightOf="@id/minusBtn"
+        android:layout_below="@id/input2"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:id="@+id/divideBtn"
+        android:layout_toRightOf="@id/multiplyBtn"
+        android:layout_below="@id/input2"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/resultTextView"
+        android:layout_below="@id/plusBtn"
+        android:gravity="center"
+        android:foregroundGravity="center"
+        android:text="result"
+        android:textSize="20dp"/>
+</RelativeLayout>
